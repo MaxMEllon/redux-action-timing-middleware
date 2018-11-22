@@ -1,6 +1,8 @@
 # redux-action-timing-middleware
 
-![](./.github/demo.png)
+![](./.github/demo1.png)
+
+![](./.github/demo2.png)
 
 > Add marker of redux-action to User Timing in profile.
 
@@ -13,9 +15,6 @@ $ npm i --save-dev redux-action-timing-middleware
 $ yarn add --dev redux-action-timing-middleware
 ```
 
-
-
-
 Usage
 ---
 
@@ -26,7 +25,7 @@ import actionTiming from "redux-action-timing-middleware"
 const createReduxStore = (reducer, initialState) => {
   const middlewares = [
     // Please put top in middleware list.
-    actionTiming(process.env.NODE_ENV === "development"), // Please set first args, If you use only development
+    actionTiming(),
 
     middlewareA,
     middlewareB
@@ -41,6 +40,24 @@ const createReduxStore = (reducer, initialState) => {
 
 export default createReduxStore
 ```
+
+Option
+---
+
+- actionTiming(enable: boolean = true): void
+
+Please set NODE_ENV to arguments, if you use only development
+
+```
+const middlewares = [
+  // Please put top in middleware list.
+  actionTiming(process.env.NODE_ENV === 'development'),
+
+  middlewareA,
+  middlewareB
+]
+```
+
 
 LICENSE
 ---
