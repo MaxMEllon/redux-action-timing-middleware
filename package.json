@@ -2,6 +2,7 @@
   "name": "redux-action-timing-middleware",
   "version": "1.2.0",
   "main": "index.js",
+  "typings": "index.d.ts",
   "repository": "ssh://git@github.com/MaxMEllon/redux-action-perf-middleware.git",
   "author": "MaxMEllon <maxmellon1994@gmail.com>",
   "license": "MIT",
@@ -12,5 +13,8 @@
     "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0"
+  },
+  "dependencies": {
+    "@types/redux": "^3.6.0"
   }
 }
