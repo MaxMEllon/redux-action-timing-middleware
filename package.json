@@ -1,6 +1,6 @@
 {
   "name": "redux-action-timing-middleware",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "main": "index.js",
   "typings": "index.d.ts",
   "repository": "ssh://git@github.com/MaxMEllon/redux-action-perf-middleware.git",
