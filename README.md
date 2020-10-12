@@ -48,7 +48,7 @@ Option
 
 Please set NODE_ENV to arguments, if you use only development
 
-```
+```javascript
 const middlewares = [
   // Please put top in middleware list.
   actionTiming(process.env.NODE_ENV === 'development'),
