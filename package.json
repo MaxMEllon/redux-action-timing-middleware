@@ -10,9 +10,9 @@
     "build": "babel src/index.js > index.js"
   },
   "devDependencies": {
-    "@babel/cli": "7.14.3",
-    "@babel/core": "7.14.3",
-    "@babel/preset-env": "7.14.4"
+    "@babel/cli": "7.14.5",
+    "@babel/core": "7.14.5",
+    "@babel/preset-env": "7.14.5"
   },
   "dependencies": {
     "@types/redux": "^3.6.0"
